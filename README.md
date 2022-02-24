@@ -94,3 +94,43 @@ Subir los cambios a un repositorio remoto
 ~~~sh
 git push origin master
 ~~~
+
+# Deshacer cambios
+## Deshacer cambios desde el Repository
+
+Para traer una rama.
+~~~sh
+git checkout master
+~~~
+
+Para traer un archivo o grupo de archivos especifico.
+~~~sh
+git checkout -- {Archivo} # Si se pone un . se traen todos los archivos
+~~~
+
+
+Para traer de una revision concreta.
+~~~sh
+git checkout {Indentificador de la revision} {Archivo} # Si se pone un . se traen todos los archivos. Si en la se donde la revision se agrega un "~" y un numero n traera la revision n anterior a la indicada (tambien acepta hashes)
+~~~
+
+## Deshacer cambios desde el Staging Area
+
+~~~sh
+git reset HEAD {Archivo}
+~~~
+
+## Deshacer cambios desde el Repository y borrar el Staging Area
+
+Este comando borra el Working directory y el Staging Area y trae una revision, este es un comando peligroso.
+~~~sh
+git reset --hard {Revision}
+~~~
+
+## revertir los cambios realizados de manera segura
+
+Con el siguiente comando se puede revertir los cambio y se puede seleccionar que archivos van a ser revertidos
+
+~~~sh
+git revert {Nombre de la revision}
+~~~
