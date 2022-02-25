@@ -90,7 +90,7 @@ Todo lo anterior se puede resumir en un comando
 git clone {Enlace} # Si se pone un . se descarga en la carpeta actual
 ~~~
 
-Subir los cambios a un repositorio remoto
+## Subir los cambios a un repositorio remoto
 ~~~sh
 git push origin master
 ~~~
