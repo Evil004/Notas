@@ -134,3 +134,36 @@ Con el siguiente comando se puede revertir los cambio y se puede seleccionar que
 ~~~sh
 git revert {Nombre de la revision}
 ~~~
+
+# Rasmas o branch
+
+Las ramas valen para poder hacer un desarrollo en paralelo al desarrollo original o hacer pruebas sin alterar el proyecto principal.
+
+## Crear rama a partir  de la amster
+
+~~~sh
+git branch {Nombre de la rama} master
+~~~
+
+## Pasar a la nueva rama
+
+~~~sh
+git checkout {nombre de la rama}
+~~~
+
+## Saber las ramas disponibles y en la que estamos
+
+~~~sh
+git branch # con -a podemos ver las ramas remotas y con -v sale el mensaje del ultimo commit de cada rama
+~~~
+
+## Fusionar con la rama pricipal
+Primero hay que cambiar a la rama pricipal
+~~~sh
+git checkout master
+~~~
+
+Y fusionamos las 2 ramas
+~~~sh
+git merge {nombre de la rama} master
+~~~
