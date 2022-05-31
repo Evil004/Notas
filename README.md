@@ -134,8 +134,6 @@ Con el siguiente comando se puede revertir los cambio y se puede seleccionar que
 ~~~sh
 git revert {Nombre de la revision}
 ~~~
-<<<<<<< HEAD
-
 # Rasmas o branch
 
 Las ramas valen para poder hacer un desarrollo en paralelo al desarrollo original o hacer pruebas sin alterar el proyecto principal.
