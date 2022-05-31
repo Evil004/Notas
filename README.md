@@ -90,7 +90,7 @@ Todo lo anterior se puede resumir en un comando
 git clone {Enlace} # Si se pone un . se descarga en la carpeta actual
 ~~~
 
-Subir los cambios a un repositorio remoto
+## Subir los cambios a un repositorio remoto
 ~~~sh
 git push origin master
 ~~~
@@ -134,6 +134,7 @@ Con el siguiente comando se puede revertir los cambio y se puede seleccionar que
 ~~~sh
 git revert {Nombre de la revision}
 ~~~
+<<<<<<< HEAD
 
 # Rasmas o branch
 
