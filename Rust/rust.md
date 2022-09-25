@@ -144,3 +144,5 @@ Tambien se pueden poner comentarios de documentacion dentro de funciones, modulo
 ### [Ejemplo de lo anterior en codigo](./Ejemplos/rustPrints.rs)
 
 ### [Variables & data types](./rustVariables.md)
+
+### [Operadores](./rustOperators.md)
