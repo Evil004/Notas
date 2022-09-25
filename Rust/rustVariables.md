@@ -112,15 +112,15 @@ let name: &str = "Oscar"; // La variable se declara con el tipo de dato String q
 
 -   Tipos escalares
 
-    -   [Integer](####Integer)
-    -   [Float](####Float)
+    -   [Integer](#Integer)
+    -   [Float](#Float)
 
-    -   [Boolean](####Boolean)
-    -   [Character](####Character)
+    -   [Boolean](#Boolean)
+    -   [Character](#Character)
 
 -   Tipos compuestos
-    -   [Tuplas](####Tuplas)
-    -   [Arrays](####Arrays)
+    -   [Tuplas](#Tuplas)
+    -   [Arrays](#Arrays)
 
 #### Integer
 Las variables de tipo integer almacenan numeros enteros. Rust tiene 8 tipos de integer en rust dependiendo del tamaño del tamaño en bits que ocupa en memoria, se agupan en 2 tipos:
