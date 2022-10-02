@@ -6,3 +6,6 @@
 
 ## [Operadores](./rustOperators.md)
 ## [Expresiones condicionales](./rustConditionalExpressions.md)
+
+## [Loops](./rustLoops.md)
+
