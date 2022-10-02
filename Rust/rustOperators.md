@@ -45,7 +45,7 @@ Los operadores logicos son los operadores que se usan para realizar operaciones 
 | Operador | Nombre | Descripcion |
 |----------|-------------| ----------- |
 | &&       | AND         | Evalua si dos expresiones son verdaderas |
-| ||       | OR          | Evalua si una de las expresiones es verdadera |
+| \|\|       | OR          | Evalua si una de las expresiones es verdadera |
 | !        | NOT         | Invierte el valor de una expresion |
 
 ```rust
