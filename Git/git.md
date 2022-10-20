@@ -44,9 +44,9 @@ El parametro --pretty nos permite mostrar los campos con un formato concreto.
 git log --pretty=format:"%h %an %ar - %s" # Devuelve el hash ID, el autor, Cuanto hace que se realizo el commit y el mensaje del commit
 ~~~
 
-PAra ver los canvios que hubo en un comit se usa
+Para ver los canvios de un commit concreto
 ~~~sh
-git show {hassh ID} 
+git show {hash ID} 
 ~~~
 
 ## Comparar los archivos
@@ -60,7 +60,6 @@ git diff --staged
 ~~~
 
 Devuelve la diferencia de los archivos del Working directory con los del repositorio con una herramienta grafica.
-
 ~~~sh
 git difftool
 ~~~
@@ -82,7 +81,7 @@ Para descargar el repositorio
 git pull origin master #Origin es el nombre que pusimos en el primer comando, y master es el nombre de la rama en la que lo pondremos. 
 ~~~
 
-## Git Clon
+## Clonar un repositorio remoto
 Todo lo anterior se puede resumir en un comando
 
 ~~~sh
@@ -95,49 +94,32 @@ git push origin master
 ~~~
 
 # Deshacer cambios
-## Deshacer cambios desde el Repository
 
-Para traer una rama.
-~~~sh
-git checkout master
-~~~
-
-Para traer un archivo o grupo de archivos especifico.
-~~~sh
-git checkout -- {Archivo} # Si se pone un . se traen todos los archivos
-~~~
-
-
-Para traer de una revision concreta.
-~~~sh
-git checkout {Indentificador de la revision} {Archivo} # Si se pone un . se traen todos los archivos. Si en la se donde la revision se agrega un "~" y un numero n traera la revision n anterior a la indicada (tambien acepta hashes)
-~~~
-
-## Deshacer cambios desde el Staging Area
+## Deshacer cambios en el Working directory
 
 ~~~sh
 git reset HEAD {Archivo}
 ~~~
 
-## Deshacer cambios desde el Repository y borrar el Staging Area
+## Deshacer cambios de maneda forzada
 
 Este comando borra el Working directory y el Staging Area y trae una revision, este es un comando peligroso.
 ~~~sh
 git reset --hard {Revision}
 ~~~
 
-## revertir los cambios realizados de manera segura
+## Revertir los cambios realizados de manera segura
 
 Con el siguiente comando se puede revertir los cambio y se puede seleccionar que archivos van a ser revertidos
 
 ~~~sh
 git revert {Nombre de la revision}
 ~~~
-# Rasmas o branch
+# Ramas o branch
 
 Las ramas valen para poder hacer un desarrollo en paralelo al desarrollo original o hacer pruebas sin alterar el proyecto principal.
 
-## Crear rama a partir  de la amster
+## Crear rama a partir  de la master
 
 ~~~sh
 git branch {Nombre de la rama} master
